@@ -1,14 +1,84 @@
-<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url("fooo.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .header {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00bfff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn-home:hover {
+            background-color: #009acd;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to Dashboard!</h1>
-<a href="index.html">
-  <button>Kembali ke Home</button>
-</a>
+    <div class="header">
+        <h1>Selamat Datang di Dashboard</h1>
+        <a href="index.html" class="btn-home">Kembali ke Beranda</a>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <h3>Statistik</h3>
+            <p>Data terbaru pengguna dan aktivitas sistem</p>
+        </div>
+        <div class="card">
+            <h3>Pengaturan</h3>
+            <p>Atur profil dan preferensi pengguna di sini</p>
+        </div>
+        <div class="card">
+            <h3>Laporan</h3>
+            <p>Lihat dan unduh laporan bulanan sistem</p>
+        </div>
+    </div>
 </body>
 </html>
