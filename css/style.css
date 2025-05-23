@@ -1004,4 +1004,8 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
+.fa-shopping-cart {
+  display: none !important;
+}
 /*# sourceMappingURL=style.css.map */
